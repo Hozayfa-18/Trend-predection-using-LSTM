@@ -47,6 +47,15 @@ Dieses Notebook demonstriert die Verwendung eines Long Short-Term Memory (LSTM)-
 ## Beispiel für die Visualisierung
 Das folgende Diagramm zeigt einen Vergleich der echten Werte und der Vorhersagen des LSTM-Modells:
 
-![Vergleich der echten und vorhergesagten Werte](images/end_24-06-15-21-00.png)
+![Vergleich der echten und vorhergesagten Werte](images/end_24-06-15-21-00-edited.png)
+![Da der chart oben nicht komplett ist hier ust die aktuelle version von 24.06.15 21:00](images/updated_end-24-06-15-21-00.PNG)
+
+Ich nehme normalerweise nur die ersten zwei Stunden ernst, das heißt, ich betrachte die Daten bis 14:00 Uhr. Das Modell erstellt jedoch Vorhersagen für 10 Stunden, von denen ich nur die ersten zwei Stunden berücksichtige, da die restlichen 90 % der Vorhersagen oft ungenau sind. Im Vergleich kann man jedoch sehen, dass mehr als zwei Stunden korrekt waren.
+
+![Vergleich der echten und vorhergesagten Werte](images/end_24-06-15-14-00-edited.PNG)
+
+
+
+
 
 

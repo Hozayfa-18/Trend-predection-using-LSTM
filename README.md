@@ -50,9 +50,11 @@ Das folgende Diagramm zeigt einen Vergleich der echten Werte und der Vorhersagen
 ![Vergleich der echten und vorhergesagten Werte](images/end_24-06-15-21-00-edited.png)
 ![Da der chart oben nicht komplett ist hier ust die aktuelle version von 24.06.15 21:00](images/updated_end-24-06-15-21-00.PNG)
 
-Ich nehme normalerweise nur sie ersten 2 stunden ernst sprich ich habe data bis 14:00 und der Modell predictet 10 stunden ich nehme nur die ersten 2 stunden da der rest zu 90% der male falsch ist. Ind dem vergleich kann man sehen das mehr als 2 stunden richtig waren:
+Ich nehme normalerweise nur die ersten zwei Stunden ernst, das heißt, ich betrachte die Daten bis 14:00 Uhr. Das Modell erstellt jedoch Vorhersagen für 10 Stunden, von denen ich nur die ersten zwei Stunden berücksichtige, da die restlichen 90 % der Vorhersagen oft ungenau sind. Im Vergleich kann man jedoch sehen, dass mehr als zwei Stunden korrekt waren.
 
 ![Vergleich der echten und vorhergesagten Werte](images/end_24-06-15-14-00-edited.PNG)
+
+
 
 
 

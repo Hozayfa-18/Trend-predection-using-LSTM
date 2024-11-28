@@ -74,6 +74,9 @@ Das folgende Diagramm zeigt einen Vergleich der echten Werte und der Vorhersagen
 Im angefügten Bild sind Daten bis **24.06.15, 21:00 Uhr** verfügbar. Diese zeitliche Begrenzung der Daten ist im Diagramm sichtbar und verdeutlicht, wie das Modell mit der Einschränkung umgeht.
 
 ![Vergleich der echten und vorhergesagten Werte](images/end_24-06-15-21-00-edited.png)
+
+Da der oben gezeigte Chart nicht vollständig ist, hier die aktuelle Version vom 24.06.15 um 21:00 Uhr
+
 ![Da der chart oben nicht komplett ist hier ust die aktuelle version von 24.06.15 21:00](images/updated_end-24-06-15-21-00.PNG)
 
 Ich nehme normalerweise nur die ersten zwei Stunden ernst, das heißt, ich betrachte die Daten bis 14:00 Uhr. Das Modell erstellt jedoch Vorhersagen für 10 Stunden, von denen ich nur die ersten zwei Stunden berücksichtige, da die restlichen 90 % der Vorhersagen oft ungenau sind. Im Vergleich kann man jedoch sehen, dass mehr als zwei Stunden korrekt waren.

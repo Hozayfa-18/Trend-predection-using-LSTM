@@ -18,6 +18,8 @@ Dieses Notebook demonstriert die Verwendung eines Long Short-Term Memory (LSTM)-
   - `pandas`
   - `matplotlib`
   - `tensorflow`
+  - `scipy`
+  - `sklearn`
 
 ## Hauptabschnitte
 1. **Datenvorverarbeitung**:

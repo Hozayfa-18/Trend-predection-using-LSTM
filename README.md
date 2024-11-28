@@ -43,3 +43,10 @@ Dieses Notebook demonstriert die Verwendung eines Long Short-Term Memory (LSTM)-
 1. Stelle sicher, dass die benötigten Bibliotheken installiert sind:
    ```bash
    pip install numpy pandas matplotlib tensorflow
+
+## Beispiel für die Visualisierung
+Das folgende Diagramm zeigt einen Vergleich der echten Werte und der Vorhersagen des LSTM-Modells:
+
+![Vergleich der echten und vorhergesagten Werte](images/end_24-06-15-21-00.png)
+
+

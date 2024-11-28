@@ -3,6 +3,10 @@
 ## Übersicht
 Dieses Notebook demonstriert die Verwendung eines Long Short-Term Memory (LSTM)-Netzwerks zur Vorhersage von Aktienhandels-Trends. Der Workflow umfasst die Datenvorverarbeitung, die Erstellung und das Training des Modells sowie die Visualisierung der Vorhersagen.
 
+## Sehr Wichtig
+
+.ipynb-Dateien können in GitHub nicht direkt angezeigt werden, da sie visuelle Darstellungen enthalten. Bitte verwenden Sie [nbviewer.org](https://nbviewer.org), um den Inhalt anzuzeigen.
+
 ## Funktionen
 - **Datenladen und -vorverarbeitung**: Verarbeitung von Rohdaten aus dem Finanzbereich und deren Formatierung für Zeitreihenanalysen.
 - **Training eines LSTM-Modells**: Aufbau und Training eines LSTM-Modells mit Keras/TensorFlow.

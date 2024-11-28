@@ -21,6 +21,8 @@ Dieses Notebook demonstriert die Verwendung eines Long Short-Term Memory (LSTM)-
   - `numpy`
   - `pandas`
   - `matplotlib`
+  - `yfinance`
+  - `pandas_ta`
   - `tensorflow`
   - `scipy`
   - `sklearn`
@@ -42,19 +44,41 @@ Dieses Notebook demonstriert die Verwendung eines Long Short-Term Memory (LSTM)-
 4. **Visualisierung**:
    - Darstellung von echten vs. vorhergesagten Werten für die Testdaten.
    - Visualisierung zukünftiger Vorhersagen des LSTM-Modells.
+  
+# Vorhersage-Modell mit yfinance-Daten
 
-## Anleitung zur Ausführung
-1. Stelle sicher, dass die benötigten Bibliotheken installiert sind:
-   ```bash
-   pip install numpy pandas matplotlib tensorflow
+## Überblick
+
+Das Modell nutzt **yfinance**, um Finanzdaten abzurufen und Vorhersagen zu erstellen. Allerdings stellt **yfinance** Daten immer nur bis **zwei Stunden vor der aktuellen Stunde** bereit. Das bedeutet beispielsweise, dass um **14:00 Uhr** nur Daten bis **10:00 Uhr** verfügbar sind.
+
+## Visualisierung
+
+Die Vorhersagen und die tatsächlichen Werte werden in einem Diagramm dargestellt, das drei Linien mit unterschiedlichen Farben zeigt:
+
+- **Schwarze Linie**: Repräsentiert die **tatsächlichen Werte** (echte historische Daten).
+- **Blau gestrichelte Linie**: Stellt die **Vorhersage des Modells** dar.
+- **Rote Linie**: Zeigt die **zukünftige Vorhersage** des Modells.
+
+### Grüne Box
+
+Die Informationen innerhalb der **grünen Box** heben die **zukünftigen Vorhersagen** hervor.
+
+## Hinweis
+
+Durch die zeitliche Einschränkung der verfügbaren Daten können aktuelle Werte, die näher an der Gegenwart liegen, nicht berücksichtigt werden. Die Diagramme sollen trotzdem helfen, die Genauigkeit des Modells im Vergleich zu den tatsächlichen Werten zu beurteilen.
+
 
 ## Beispiel für die Visualisierung
 Das folgende Diagramm zeigt einen Vergleich der echten Werte und der Vorhersagen des LSTM-Modells:
+
+Im angefügten Bild sind Daten bis **24.06.15, 21:00 Uhr** verfügbar. Diese zeitliche Begrenzung der Daten ist im Diagramm sichtbar und verdeutlicht, wie das Modell mit der Einschränkung umgeht.
 
 ![Vergleich der echten und vorhergesagten Werte](images/end_24-06-15-21-00-edited.png)
 ![Da der chart oben nicht komplett ist hier ust die aktuelle version von 24.06.15 21:00](images/updated_end-24-06-15-21-00.PNG)
 
 Ich nehme normalerweise nur die ersten zwei Stunden ernst, das heißt, ich betrachte die Daten bis 14:00 Uhr. Das Modell erstellt jedoch Vorhersagen für 10 Stunden, von denen ich nur die ersten zwei Stunden berücksichtige, da die restlichen 90 % der Vorhersagen oft ungenau sind. Im Vergleich kann man jedoch sehen, dass mehr als zwei Stunden korrekt waren.
+
+Im angefügten Bild sind Daten bis **24.06.15, 14:00 Uhr** verfügbar. Diese zeitliche Begrenzung der Daten ist im Diagramm leider nicht sehr sichtbar.
 
 ![Vergleich der echten und vorhergesagten Werte](images/end_24-06-15-14-00-edited.PNG)
 
